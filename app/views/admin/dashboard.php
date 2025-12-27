@@ -29,7 +29,7 @@
             </li>
 
             <li>
-                <a href="<?= BASE_URL ?>/admin/logout">
+                <a href="<?= BASE_URL ?>/admin/logout" onclick="return confirm('Apakah Anda yakin ingin logout?')">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>

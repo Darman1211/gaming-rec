@@ -33,7 +33,15 @@ class Router
         if (method_exists($controller, $method)) {
             $controller->$method();
         } else {
-            echo "404 - Page not found";
+            $this->show404();
         }
+    }
+
+    private function show404()
+    {
+        http_response_code(404);
+        require_once "../app/views/partials/public/header.php";
+        require_once "../app/views/errors/404.php";
+        require_once "../app/views/partials/public/footer.php";
     }
 }
