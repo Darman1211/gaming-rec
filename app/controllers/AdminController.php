@@ -34,6 +34,8 @@ class AdminController extends Controller
             header('Location: ' . BASE_URL . '/admin');
             exit;
         }
+
+        $this->view('admin/dashboard', [], 'admin');
     }
 
     public function logout()

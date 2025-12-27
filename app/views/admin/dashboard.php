@@ -6,27 +6,64 @@
             <span>GamingRec</span>
         </div>
 
+        <div class="border-styled"></div>
+
         <ul class="sidebar-menu">
-            <li class="active">
+            <span class="menu-section-name">Dashboard</span>
+            <li>
                 <a href="<?= BASE_URL ?>/admin/dashboard">
                     <i class="fas fa-chart-line"></i>
                     <span>Dashboard</span>
                 </a>
             </li>
 
-            <li>
+            <span class="menu-section-name">Master Data</span>
+            <li class="active">
                 <a href="#">
                     <i class="fas fa-database"></i>
-                    <span>Data Produk</span>
+                    <span>Input Kriteria</span>
                 </a>
             </li>
-
             <li>
                 <a href="#">
                     <i class="fas fa-cogs"></i>
-                    <span>Pengaturan</span>
+                    <span>Output Kriteria</span>
                 </a>
             </li>
+
+            <span class="menu-section-name">Konfigurasi Input</span>
+            <li>
+                <a href="#">
+                    <i class="fas fa-database"></i>
+                    <span>Opsi Input</span>
+                </a>
+            </li>
+
+            <span class="menu-section-name">Aturan Rekomendasi</span>
+            <li>
+                <a href="#">
+                    <i class="fas fa-database"></i>
+                    <span>Matriks Input-Output</span>
+                </a>
+            </li>
+
+            <span class="menu-section-name">Konfigurasi Output</span>
+            <li>
+                <a href="#">
+                    <i class="fas fa-database"></i>
+                    <span>Hasil Rekomendasi</span>
+                </a>
+            </li>
+
+            <span class="menu-section-name">Simulasi</span>
+            <li>
+                <a href="#">
+                    <i class="fas fa-database"></i>
+                    <span>Uji Rekomendasi</span>
+                </a>
+            </li>
+            
+            <div class="border-styled"></div>
 
             <li>
                 <a href="<?= BASE_URL ?>/admin/logout" onclick="return confirm('Apakah Anda yakin ingin logout?')">
