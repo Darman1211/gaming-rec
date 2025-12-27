@@ -22,8 +22,10 @@ class AdminController extends Controller
             $_SESSION['admin'] = $admin['username'];
             header('Location: ' . BASE_URL . '/admin/dashboard');
         } else {
-            echo "Login gagal";
+            $_SESSION['error'] = 'Username atau password salah';
+            header('Location: ' . BASE_URL . '/admin');
         }
+        exit;
     }
 
     public function dashboard()
