@@ -30,12 +30,10 @@ class AdminController extends Controller
 
     public function dashboard()
     {
-        // if (!isset($_SESSION['admin'])) {
-        //     header('Location: ' . BASE_URL . '/admin');
-        //     exit;
-        // }
-
-        $this->view('admin/dashboard', [], 'admin');
+        if (!isset($_SESSION['admin'])) {
+            header('Location: ' . BASE_URL . '/admin');
+            exit;
+        }
     }
 
     public function logout()
