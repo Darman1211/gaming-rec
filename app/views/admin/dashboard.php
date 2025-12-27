@@ -1,5 +1,4 @@
 <div class="admin-dashboard">
-
     <!-- SIDEBAR -->
     <aside class="admin-sidebar">
         <div class="sidebar-logo">
